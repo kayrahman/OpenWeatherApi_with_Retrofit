@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OpenWeatherApi with Retrofit</string>
+    <string name="hint">Search by city,country</string>
+</resources>

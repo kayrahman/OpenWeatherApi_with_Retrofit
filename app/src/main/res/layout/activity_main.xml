@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_ac_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="24dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            style="@style/WeatherLabel"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_ac_main_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            style="@style/WeatherLabel"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="24dp"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_ac_main_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="48"
+            android:textSize="42sp"
+            android:layout_weight="1"
+            style="@style/WeatherLabel"
+            tools:text="10\u00b0"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:orientation="vertical"
+            >
+
+        <ImageView
+            android:id="@+id/iv_ac_main_weather_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+            <TextView
+                android:id="@+id/tv_weather_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                style="@style/WeatherLabel"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_ac_main_humidity_hc"
+                style="@style/WeatherLabel"
+                android:layout_weight="1"
+                android:text="Humidity"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_ac_main_humidity"
+                style="@style/WeatherLabel"
+                android:layout_weight="1"
+                android:text="72%"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_ac_main_pressure_hc"
+                style="@style/WeatherLabel"
+                android:layout_weight="1"
+                android:text="Pressure"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_ac_main_pressure"
+                style="@style/WeatherLabel"
+                android:layout_weight="1"
+                android:text="72%"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_ac_main_wind_hc"
+                style="@style/WeatherLabel"
+                android:layout_weight="1"
+                android:text="Wind"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_ac_main_wind"
+                style="@style/WeatherLabel"
+                android:layout_weight="1"
+                android:text="72%"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_ac_main_location_hc"
+                style="@style/WeatherLabel"
+                android:layout_weight="1"
+                android:text="Location"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_ac_main_location"
+                style="@style/WeatherLabel"
+                android:layout_weight="1"
+                android:text="72%"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_ac_main_location_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Location not found"
+        style="@style/WeatherLabel"
+        android:textAlignment="center"
+        />
+
+
+
+</RelativeLayout>
